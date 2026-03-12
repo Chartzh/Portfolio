@@ -49,7 +49,7 @@
             </p>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
-                {#each [{ label: "Experience", value: "2+ Years" }, { label: "Projects", value: "15+" }, { label: "Certifications", value: "5+" }, { label: "Mentorship", value: "2 Orgs" }] as stat}
+                {#each [{ label: "Experience", value: "1+ Years" }, { label: "Projects", value: "4" }, { label: "Certifications", value: "15+" }, { label: "Mentorship", value: "2 Orgs" }] as stat}
                     <div
                         class="bg-white/5 border border-white/5 rounded-lg p-3 text-center transition-colors hover:bg-white/10 hover:border-neonCyan/30"
                     >

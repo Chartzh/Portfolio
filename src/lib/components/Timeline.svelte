@@ -17,7 +17,7 @@
                 "Intensive training program focusing on AI engineering principles and IBM technologies.",
         },
         {
-            year: "2025 - Present",
+            year: "2026 - Present",
             title: "Data Science Mentor",
             company: "HitLab",
             description:

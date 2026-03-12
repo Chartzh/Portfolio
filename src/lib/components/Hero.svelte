@@ -55,6 +55,7 @@
 </script>
 
 <section
+    id="home"
     class="min-h-[70vh] flex flex-col justify-center items-start pt-20 pb-10"
     use:inView={{ y: 50, duration: 1000 }}
 >
@@ -97,7 +98,7 @@
                 View Projects
             </a>
             <a
-                href="mailto:contact@example.com"
+                href="mailto:rajifraditia@gmail.com"
                 class="px-6 py-3 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 text-white font-medium backdrop-blur-sm transition-all duration-300 text-center"
             >
                 Contact Me

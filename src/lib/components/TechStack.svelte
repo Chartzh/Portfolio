@@ -84,6 +84,30 @@
                     <i class="fab fa-css3-alt text-blue-400 text-xl"></i>
                     <span class="text-gray-200">Tailwind CSS</span>
                 </div>
+                <!-- New Skills -->
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <span class="text-white font-bold">Streamlit</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-database text-blue-400"></i>
+                    <span class="text-gray-200">BigQuery</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-network-wired text-purple-400"></i>
+                    <span class="text-gray-200">ETL</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-brain text-pink-400"></i>
+                    <span class="text-gray-200">Prompt Engineering</span>
+                </div>
             </div>
 
             <!-- Duplicate for seamless loop -->
@@ -142,6 +166,30 @@
                 >
                     <i class="fab fa-css3-alt text-blue-400 text-xl"></i>
                     <span class="text-gray-200">Tailwind CSS</span>
+                </div>
+                <!-- New Skills -->
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <span class="text-white font-bold">Streamlit</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-database text-blue-400"></i>
+                    <span class="text-gray-200">BigQuery</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-network-wired text-purple-400"></i>
+                    <span class="text-gray-200">ETL</span>
+                </div>
+                <div
+                    class="glass px-6 py-3 rounded-full flex items-center gap-3 whitespace-nowrap hover:border-teal-400/50 transition-colors"
+                >
+                    <i class="fas fa-brain text-pink-400"></i>
+                    <span class="text-gray-200">Prompt Engineering</span>
                 </div>
             </div>
         </div>
