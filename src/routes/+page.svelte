@@ -15,18 +15,19 @@
     const projects = [
         {
             id: 1,
-            title: "Stellar AI",
+            title: "Astro AI",
             shortDescription:
                 "End-to-end GenAI assistant integrating ESP32-S3 hardware for edge computing.",
             description:
-                "Stellar AI is a comprehensive edge computing solution that brings Generative AI capabilities directly to hardware. By utilizing an ESP32-S3 microcontroller, this system bypasses heavy cloud-compute latency for specific offline tasks while intelligently routing complex queries to the cloud. Designed with energy efficiency and real-time response in mind.",
+                "Astro AI is a comprehensive edge computing solution that brings Generative AI capabilities directly to hardware. By utilizing an ESP32-S3 microcontroller, this system bypasses heavy cloud-compute latency for specific offline tasks while intelligently routing complex queries to the cloud. Designed with energy efficiency and real-time response in mind.",
             tags: ["ESP32-S3", "GenAI", "C++", "Python", "Edge Computing"],
             image: "",
             images: [
-                "src/lib/assets/project/Stellar_Phase_1/1.webp",
-                "src/lib/assets/project/Stellar_Phase_1/2.webp",
-                "src/lib/assets/project/Stellar_Phase_1/3.webp",
-                "src/lib/assets/project/Stellar_Phase_1/4.webp",
+                "src/lib/assets/project/Astro/Astro_logo.webp",
+                "src/lib/assets/project/Astro/1.webp",
+                "src/lib/assets/project/Astro/2.webp",
+                "src/lib/assets/project/Astro/3.webp",
+                "src/lib/assets/project/Astro/4.webp",
             ],
             link: "https://github.com",
             status: "wip",
@@ -104,7 +105,7 @@
                 "src/lib/assets/project/Nvidia/9.webp",
                 "src/lib/assets/project/Nvidia/10.webp",
             ],
-            link: "https://github.com",
+            link: "https://github.com/Chartzh/NVIDIA-NVDA-Stock-Price-Prediction",
             status: "completed",
         },
     ];

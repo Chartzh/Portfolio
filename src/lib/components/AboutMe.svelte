@@ -21,7 +21,11 @@
                 <div
                     class="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden flex items-center justify-center"
                 >
-                    <span class="text-gray-500 text-4xl">Image</span>
+                    <img
+                        src="src/lib/assets/project/About_me/Profile_picture.webp"
+                        alt="Profile"
+                        class="w-full h-full object-cover rounded-full"
+                    />
                 </div>
             </div>
         </div>
