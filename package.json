@@ -13,8 +13,8 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "@sveltejs/kit": "^2.0.0",
     "@sveltejs/adapter-vercel": "^6.3.3",
+    "@sveltejs/kit": "^2.0.0",
     "lucide-svelte": "^0.475.0"
   },
   "devDependencies": {

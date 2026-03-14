@@ -7,13 +7,45 @@
 <div class="relative min-h-screen overflow-hidden">
   <!-- Interactive Ambient Background -->
   <div class="fixed inset-0 z-0 pointer-events-none opacity-40">
-    <div
-      class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neonCyan/20 blur-[120px] rounded-full mix-blend-screen animate-glow"
-    ></div>
-    <div
-      class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-electricBlue/20 blur-[150px] rounded-full mix-blend-screen"
+    <svg
+      class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] animate-glow"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <defs>
+        <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2" />
+          <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <circle
+        cx="50"
+        cy="50"
+        r="50"
+        fill="url(#glow-cyan)"
+        style="mix-blend-mode: screen;"
+      />
+    </svg>
+    <svg
+      class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%]"
       style="animation: glow 3s ease-in-out infinite alternate-reverse;"
-    ></div>
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <defs>
+        <radialGradient id="glow-blue" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#4facfe" stop-opacity="0.2" />
+          <stop offset="100%" stop-color="#4facfe" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <circle
+        cx="50"
+        cy="50"
+        r="50"
+        fill="url(#glow-blue)"
+        style="mix-blend-mode: screen;"
+      />
+    </svg>
   </div>
 
   <Navbar />

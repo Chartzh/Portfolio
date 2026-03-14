@@ -7,9 +7,18 @@
         class="glass-card flex flex-col md:flex-row gap-8 items-center md:items-start relative overflow-hidden group"
     >
         <!-- Ambient glow inside card -->
-        <div
-            class="absolute -top-32 -right-32 w-64 h-64 bg-neonCyan/10 blur-[80px] rounded-full group-hover:bg-neonCyan/20 transition-all duration-500"
-        ></div>
+        <svg
+            class="absolute -top-32 -right-32 w-64 h-64 pointer-events-none transition-all duration-500 opacity-50 group-hover:opacity-100"
+            viewBox="0 0 100 100"
+        >
+            <defs>
+                <radialGradient id="glow-about" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
+                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="50" fill="url(#glow-about)" />
+        </svg>
 
         <div class="w-full md:w-1/3 flex justify-center">
             <div

@@ -14,9 +14,18 @@
 >
     <!-- Featured Glow indicator -->
     {#if featured}
-        <div
-            class="absolute top-0 right-0 w-32 h-32 bg-neonCyan/10 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full pointer-events-none"
-        ></div>
+        <svg
+            class="absolute top-0 right-0 w-32 h-32 pointer-events-none -translate-y-1/2 translate-x-1/2"
+            viewBox="0 0 100 100"
+        >
+            <defs>
+                <radialGradient id="glow-cert" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1" />
+                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                </radialGradient>
+            </defs>
+            <circle cx="50" cy="50" r="50" fill="url(#glow-cert)" />
+        </svg>
     {/if}
 
     <div class="flex items-start gap-4 w-full relative z-10">

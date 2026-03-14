@@ -13,11 +13,18 @@
     let displayedText = $state("");
     let isDeleting = $state(false);
     let typingSpeed = $state(100);
+    let isIntersecting = $state(true); // Default to true so it starts
 
     onMount(() => {
         let timeoutId: number;
 
         const type = () => {
+            if (!isIntersecting) {
+                // If not visible, just check again later without doing work
+                timeoutId = setTimeout(type, 500);
+                return;
+            }
+
             const currentFullRole = roles[currentRoleIndex];
 
             if (isDeleting) {
@@ -50,7 +57,23 @@
 
         timeoutId = setTimeout(type, typingSpeed);
 
-        return () => clearTimeout(timeoutId);
+        // Set up Intersection Observer to pause animation when off-screen
+        const section = document.getElementById("home");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    isIntersecting = entry.isIntersecting;
+                });
+            },
+            { threshold: 0.1 },
+        );
+
+        if (section) observer.observe(section);
+
+        return () => {
+            clearTimeout(timeoutId);
+            observer.disconnect();
+        };
     });
 </script>
 
