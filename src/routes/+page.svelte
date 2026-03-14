@@ -29,11 +29,34 @@
                 "src/lib/assets/project/Astro/3.webp",
                 "src/lib/assets/project/Astro/4.webp",
             ],
-            link: "https://github.com",
+            link: "",
             status: "wip",
         },
         {
             id: 2,
+            title: "Vye YouTube RAG",
+            shortDescription:
+                "Intelligent Q&A system synthesizing knowledge from YouTube videos using RAG architecture.",
+            description:
+                "Vye is a Retrieval-Augmented Generation (RAG) system built to extract, summarize, and query information directly from YouTube video transcripts. Users can paste a URL and immediately converse with the content of the video, saving hours of watch time. Built with a vector database for semantic search.",
+            tags: ["Python", "LangChain", "Vector DB", "RAG", "OpenAI"],
+            image: "",
+            images: [
+                "src/lib/assets/project/Vye/1.webp",
+                "src/lib/assets/project/Vye/2.webp",
+                "src/lib/assets/project/Vye/3.webp",
+                "src/lib/assets/project/Vye/4.webp",
+                "src/lib/assets/project/Vye/5.webp",
+                "src/lib/assets/project/Vye/6.webp",
+                "src/lib/assets/project/Vye/7.webp",
+                "src/lib/assets/project/Vye/8.webp",
+                "src/lib/assets/project/Vye/9.webp",
+            ],
+            link: "https://github.com/Chartzh/Vye",
+            status: "completed",
+        },
+        {
+            id: 3,
             title: "Daurama",
             shortDescription:
                 "Computer vision web app using Gemini API with gamification for sustainable waste management.",
@@ -59,29 +82,6 @@
                 "src/lib/assets/project/Daurama/10.webp",
             ],
             link: "https://github.com/chartzh/daurama",
-            status: "completed",
-        },
-        {
-            id: 3,
-            title: "Vye YouTube RAG",
-            shortDescription:
-                "Intelligent Q&A system synthesizing knowledge from YouTube videos using RAG architecture.",
-            description:
-                "Vye is a Retrieval-Augmented Generation (RAG) system built to extract, summarize, and query information directly from YouTube video transcripts. Users can paste a URL and immediately converse with the content of the video, saving hours of watch time. Built with a vector database for semantic search.",
-            tags: ["Python", "LangChain", "Vector DB", "RAG", "OpenAI"],
-            image: "",
-            images: [
-                "src/lib/assets/project/Vye/1.webp",
-                "src/lib/assets/project/Vye/2.webp",
-                "src/lib/assets/project/Vye/3.webp",
-                "src/lib/assets/project/Vye/4.webp",
-                "src/lib/assets/project/Vye/5.webp",
-                "src/lib/assets/project/Vye/6.webp",
-                "src/lib/assets/project/Vye/7.webp",
-                "src/lib/assets/project/Vye/8.webp",
-                "src/lib/assets/project/Vye/9.webp",
-            ],
-            link: "https://github.com/Chartzh/Vye",
             status: "completed",
         },
         {

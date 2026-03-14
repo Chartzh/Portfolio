@@ -13,7 +13,7 @@
         <div
             class="absolute top-4 right-4 z-10 px-2 py-1 text-[10px] font-bold tracking-wider uppercase bg-yellow-500/20 text-yellow-400 border border-yellow-500/50 rounded-full backdrop-blur-md"
         >
-            🚧 Work In Progress
+            Work In Progress
         </div>
     {/if}
 
