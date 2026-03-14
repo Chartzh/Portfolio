@@ -109,7 +109,9 @@
             transition:slide={{ duration: 300 }}
             class="relative z-10 pt-2 border-t border-white/5"
         >
-            <div class="flex flex-col gap-4 mt-3">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-3"
+            >
                 {#each skillMatrix as group}
                     <div>
                         <h4
@@ -131,7 +133,7 @@
 
                 <!-- JuaraGCP Hall of Fame -->
                 <div
-                    class="mt-2 bg-gradient-to-r from-yellow-500/10 to-transparent border border-yellow-500/20 rounded-lg p-3 relative overflow-hidden group/award"
+                    class="mt-2 col-span-1 sm:col-span-2 lg:col-span-4 bg-gradient-to-r from-yellow-500/10 to-transparent border border-yellow-500/20 rounded-lg p-3 relative overflow-hidden group/award"
                 >
                     <div
                         class="absolute -right-2 -top-2 opacity-5 scale-150 transition-transform duration-500 group-hover/award:scale-110 group-hover/award:opacity-10 pointer-events-none"
@@ -181,8 +183,60 @@
                 </div>
             </div>
 
+            <div class="mt-6 flex justify-center w-full col-span-1 pt-2">
+                <a
+                    href="https://www.skills.google/public_profiles/865d3d78-33f6-4ef3-abfd-04d9ad08ddc6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group w-full sm:w-auto relative inline-flex justify-center items-center gap-2.5 px-6 py-2.5 bg-blue-500/5 hover:bg-blue-500/10 border border-blue-500/20 hover:border-blue-400/50 rounded-full text-[11px] sm:text-xs font-medium text-white transition-all duration-300 shadow-[0_0_10px_rgba(59,130,246,0.05)] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] overflow-hidden"
+                    onclick={(e) => e.stopPropagation()}
+                >
+                    <!-- Hover sheen effect -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-blue-400/10 to-blue-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"
+                    ></div>
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="text-blue-400 group-hover:scale-110 transition-transform relative z-10"
+                    >
+                        <path
+                            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+
+                    <span class="relative z-10"
+                        >Verify all 80+ badges on Google Cloud Skills Boost</span
+                    >
+
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="opacity-70 group-hover:translate-x-1 transition-transform relative z-10"
+                    >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+
             <div
-                class="mt-5 pt-3 border-t border-white/5 flex justify-between items-center text-[10px] sm:text-xs text-gray-500 w-full mb-1 uppercase tracking-wider font-semibold"
+                class="mt-4 pt-3 border-t border-white/5 flex justify-between items-center text-[10px] sm:text-xs text-gray-500 w-full mb-1 uppercase tracking-wider font-semibold"
             >
                 <span class="opacity-60">Status: Verified</span>
                 <span class="text-gray-400">Google Cloud Skills Boost</span>

@@ -1,14 +1,16 @@
 <script lang="ts">
-    let { certificate, onOpen, featured = false } = $props();
+    let { certificate, onOpen = undefined, featured = false } = $props();
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-    class="glass p-5 rounded-xl cursor-pointer hover:bg-white/10 hover:border-electricBlue/30 hover:shadow-[0_0_15px_rgba(79,172,254,0.15)] transition-all duration-300 flex flex-col gap-4 group border-l-2 border-transparent hover:border-l-neonCyan/60 relative overflow-hidden {featured
-        ? 'ring-1 ring-neonCyan/30 shadow-[0_0_20px_rgba(0,242,254,0.1)] before:absolute before:inset-0 before:bg-gradient-to-br before:from-neonCyan/5 before:to-transparent before:pointer-events-none'
-        : ''}"
-    onclick={() => onOpen(certificate)}
+    class="{featured
+        ? 'glass p-5 border-l-2 border-transparent hover:border-electricBlue/30 hover:shadow-[0_0_15px_rgba(79,172,254,0.15)] hover:border-l-neonCyan/60 ring-1 ring-neonCyan/30 shadow-[0_0_20px_rgba(0,242,254,0.1)] before:absolute before:inset-0 before:bg-gradient-to-br before:from-neonCyan/5 before:to-transparent before:pointer-events-none'
+        : 'bg-obsidian border border-white/5 p-4 hover:bg-white/5 hover:border-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]'} rounded-xl {onOpen
+        ? 'cursor-pointer'
+        : 'cursor-default'} min-h-[120px] transition-all duration-300 flex flex-col gap-3 group relative overflow-hidden"
+    onclick={onOpen ? () => onOpen?.(certificate) : undefined}
 >
     <!-- Featured Glow indicator -->
     {#if featured}
@@ -52,22 +54,37 @@
             </p>
         </div>
 
-        <div
-            class="ml-auto opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0 mt-2"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="text-gray-400"
-                ><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg
-            >
+        <!-- Category Tag & Arrow Icon -->
+        <div class="ml-auto flex flex-col items-end gap-2 flex-shrink-0">
+            {#if certificate.category}
+                <span
+                    class="text-[9px] sm:text-[10px] font-medium px-1.5 py-0.5 rounded bg-white/5 border border-white/10 text-gray-400 whitespace-nowrap"
+                >
+                    {certificate.category}
+                </span>
+            {/if}
+            {#if onOpen}
+                <div
+                    class="opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0 {certificate.category
+                        ? ''
+                        : 'mt-2'}"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-gray-400"
+                        ><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"
+                        ></path></svg
+                    >
+                </div>
+            {/if}
         </div>
     </div>
 

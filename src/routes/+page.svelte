@@ -117,7 +117,7 @@
             issuer: "IBM",
             description:
                 "Advanced optimization and code generation techniques using the IBM Granite model. Demonstrated applied knowledge in creating efficient GenAI-driven code tools.",
-            image: "src/lib/assets/certificate/ibm_granite_code_generation.png",
+            image: "src/lib/assets/certificate/ibm_granite_code_generation.webp",
             link: "https://www.credly.com/badges/ab73f6c2-ae61-4447-baf1-a336bbe9fc40/linked_in_profile",
             credentialId: "-",
             issuedDate: "Sep 2025",
@@ -129,7 +129,7 @@
             issuer: "Google Cloud",
             description:
                 "Built end-to-end Generative AI applications integrating the Gemini API with Streamlit interfaces. Topics included RAG, semantic search, and prompt engineering.",
-            image: "src/lib/assets/certificate/develop_gen_ai_gcsb.png",
+            image: "src/lib/assets/certificate/develop_gen_ai_gcsb.webp",
             link: "https://www.skills.google/public_profiles/865d3d78-33f6-4ef3-abfd-04d9ad08ddc6/badges/17765098",
             credentialId: "17765098",
             issuedDate: "Aug 2025",
@@ -141,7 +141,7 @@
             issuer: "Oracle",
             description:
                 "Comprehensive database design and SQL programming, including complex queries, ETL concepts, and highly efficient schema structuring.",
-            image: "src/lib/assets/certificate/database_programming_sql.png",
+            image: "src/lib/assets/certificate/database_programming_sql.webp",
             link: "https://www.linkedin.com/in/rajifraditya/details/certifications/1770273681189/single-media-viewer/?profileId=ACoAAE79HpYBViMoBnFtPVORzeeYKx7-A83c6B0",
             credentialId: "-",
             issuedDate: "Dec 2025",
@@ -153,46 +153,44 @@
         {
             id: 4,
             title: "Python & Data Visualization",
-            issuer: "Dicoding",
-            description:
-                "Data processing leveraging Python, Pandas, and Matplotlib. Showcased ability to handle complex datasets and present clear data-driven narratives.",
-            image: "",
-            link: "https://dicoding.com/certificates/1OP82ENWVPQK",
-            credentialId: "1OP82ENWVPQK",
+            issuer: "Dicoding Indonesia",
+            category: "Data Science",
             issuedDate: "Apr 2025",
         },
         {
             id: 5,
-            title: "Belajar Dasar AI",
-            issuer: "Dicoding",
-            description:
-                "Fundamental concepts of Artificial Intelligence, including machine learning basics, data processing, and AI applications.",
-            image: "",
-            link: "https://dicoding.com",
-            credentialId: "-",
-            issuedDate: "Apr 2025",
+            title: "AI/ML Weekly Class",
+            issuer: "GDGoC UIN Jakarta",
+            category: "Artificial Intelligence",
+            issuedDate: "Jan 2025",
         },
         {
             id: 6,
-            title: "Pemrograman Web",
-            issuer: "Dicoding",
-            description:
-                "Web programming fundamentals covering HTML, CSS, JavaScript, and responsive design principles.",
-            image: "",
-            link: "https://dicoding.com",
-            credentialId: "-",
-            issuedDate: "Apr 2025",
+            title: "UI/UX Weekly Class",
+            issuer: "GDGoC UIN Jakarta",
+            category: "Product Design",
+            issuedDate: "Dec 2024",
         },
         {
             id: 7,
-            title: "AI/ML & UI/UX Weekly Classes",
-            issuer: "GDGoC",
-            description:
-                "Consistent practical training in both Machine Learning algorithms and UI/UX fundamental principles. Prototyped multiple applications iteratively.",
-            image: "",
-            link: "https://gdg.community.dev",
-            credentialId: "GDG-CC-1123",
-            issuedDate: "Aug 2025",
+            title: "Belajar Dasar Pemrograman Web",
+            issuer: "Dicoding Indonesia",
+            category: "Web Development",
+            issuedDate: "Oct 2024",
+        },
+        {
+            id: 8,
+            title: "Web Development Class",
+            issuer: "HITLAB",
+            category: "Web Development",
+            issuedDate: "Oct 2024",
+        },
+        {
+            id: 9,
+            title: "Belajar Dasar AI",
+            issuer: "Dicoding Indonesia",
+            category: "Artificial Intelligence",
+            issuedDate: "Apr 2025",
         },
     ];
 
@@ -305,9 +303,9 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="flex flex-col gap-12">
         <!-- Infrastructure Suite -->
-        <div>
+        <div class="w-full">
             <h3 class="text-lg font-medium text-white/80 mb-4 ml-1">
                 Infrastructure Suite
             </h3>
@@ -315,71 +313,16 @@
         </div>
 
         <!-- Foundations -->
-        <div>
+        <div class="w-full">
             <h3 class="text-lg font-medium text-white/80 mb-4 ml-1">
-                Foundations
+                Engineering Foundations
             </h3>
-            <div class="flex flex-col gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {#each foundationCertificates as cert}
-                    <CertificateCard
-                        certificate={cert}
-                        onOpen={openCertificateModal}
-                    />
+                    <CertificateCard certificate={cert} />
                 {/each}
             </div>
         </div>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="mt-16 flex justify-center">
-        <a
-            href="https://www.skills.google/public_profiles/865d3d78-33f6-4ef3-abfd-04d9ad08ddc6"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group relative inline-flex items-center gap-3 px-8 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neonCyan/50 rounded-full text-sm font-medium text-white transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,255,255,0.15)] overflow-hidden"
-        >
-            <!-- Hover sheen effect -->
-            <div
-                class="absolute inset-0 bg-gradient-to-r from-neonCyan/0 via-neonCyan/10 to-neonCyan/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"
-            ></div>
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                class="text-neonCyan group-hover:scale-110 transition-transform relative z-10"
-            >
-                <path
-                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                ></path>
-            </svg>
-
-            <span class="relative z-10"
-                >Verify all 80+ badges on Google Cloud Skills Boost</span
-            >
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="opacity-70 group-hover:translate-x-1 transition-transform relative z-10"
-            >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-            </svg>
-        </a>
     </div>
 </section>
 
