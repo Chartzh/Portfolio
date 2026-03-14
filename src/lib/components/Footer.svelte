@@ -14,7 +14,7 @@
 
     <div class="flex justify-center gap-6 mb-12">
         <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/rajifraditya"
             target="_blank"
             aria-label="LinkedIn"
             class="p-3 rounded-full glass hover:border-blue-500 hover:text-blue-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all"
@@ -39,7 +39,7 @@
             >
         </a>
         <a
-            href="https://github.com"
+            href="https://github.com/Chartzh"
             target="_blank"
             aria-label="GitHub"
             class="p-3 rounded-full glass hover:border-white hover:text-white hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
@@ -60,7 +60,7 @@
             >
         </a>
         <a
-            href="mailto:rajif@example.com"
+            href="mailto:rajifraditia@gmail.com"
             aria-label="Email"
             class="p-3 rounded-full glass hover:border-neonCyan hover:text-neonCyan hover:shadow-[0_0_15px_rgba(0,242,254,0.3)] transition-all"
         >
