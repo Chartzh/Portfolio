@@ -21,7 +21,7 @@
             <defs>
                 <radialGradient id="glow-cert" cx="50%" cy="50%" r="50%">
                     <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1" />
-                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                    <stop offset="70%" stop-color="#00f2fe" stop-opacity="0" />
                 </radialGradient>
             </defs>
             <circle cx="50" cy="50" r="50" fill="url(#glow-cert)" />

@@ -39,3 +39,13 @@
     /* Offset for fixed navbar */
   }
 }
+
+@keyframes glow-opacity {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}

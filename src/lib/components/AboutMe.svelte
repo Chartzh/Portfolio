@@ -14,7 +14,7 @@
             <defs>
                 <radialGradient id="glow-about" cx="50%" cy="50%" r="50%">
                     <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
-                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                    <stop offset="70%" stop-color="#00f2fe" stop-opacity="0" />
                 </radialGradient>
             </defs>
             <circle cx="50" cy="50" r="50" fill="url(#glow-about)" />

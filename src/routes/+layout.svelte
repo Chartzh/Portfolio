@@ -8,14 +8,14 @@
   <!-- Interactive Ambient Background -->
   <div class="fixed inset-0 z-0 pointer-events-none opacity-40">
     <svg
-      class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] animate-glow"
+      class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%]"
+      style="animation: glow-opacity 2s ease-in-out infinite alternate;"
       viewBox="0 0 100 100"
-      preserveAspectRatio="none"
     >
       <defs>
         <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2" />
-          <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+          <stop offset="70%" stop-color="#00f2fe" stop-opacity="0" />
         </radialGradient>
       </defs>
       <circle
@@ -27,15 +27,14 @@
       />
     </svg>
     <svg
-      class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%]"
-      style="animation: glow 3s ease-in-out infinite alternate-reverse;"
+      class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%]"
+      style="animation: glow-opacity 2s ease-in-out infinite alternate;"
       viewBox="0 0 100 100"
-      preserveAspectRatio="none"
     >
       <defs>
         <radialGradient id="glow-blue" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="#4facfe" stop-opacity="0.2" />
-          <stop offset="100%" stop-color="#4facfe" stop-opacity="0" />
+          <stop offset="70%" stop-color="#4facfe" stop-opacity="0" />
         </radialGradient>
       </defs>
       <circle
