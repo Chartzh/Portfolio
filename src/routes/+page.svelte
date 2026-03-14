@@ -238,7 +238,22 @@
     <title>Rajif | AI Engineer & Developer</title>
     <meta
         name="description"
-        content="Personal tech portfolio of Rajif, showcasing AI engineering, Generative AI, and full-stack development projects."
+        content="Building GenAI Apps with Gemini, RAG Systems, and Cloud Infrastructure. Holding 80+ Google Cloud badges and certifications from IBM & Oracle."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rajif.vercel.app/" />
+    <meta property="og:title" content="Rajif | AI Engineer & Developer" />
+    <meta
+        property="og:description"
+        content="Explore my 15+ verified credentials and projects in Generative AI & Cloud Engineering."
+    />
+    <meta property="og:image" content="https://rajif.vercel.app/og-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Rajif | AI Engineer & Developer" />
+    <meta
+        property="twitter:image"
+        content="https://rajif.vercel.app/og-image.png"
     />
 </svelte:head>
 
