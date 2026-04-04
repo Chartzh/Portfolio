@@ -4,6 +4,13 @@
     const experiences = [
         {
             year: "2026 - Present",
+            title: "Google Student Ambassador",
+            company: "Google",
+            description:
+                "Representing UIN Jakarta to empower the student community by bridging the gap between academics and Google's ecosystem, focusing on AI, Machine Learning, and Google Cloud.",
+        },
+        {
+            year: "2026 - Present",
             title: "AI/ML Mentor",
             company: "GDGoC UIN Jakarta",
             description:

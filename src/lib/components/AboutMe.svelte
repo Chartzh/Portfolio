@@ -31,7 +31,7 @@
                     class="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 overflow-hidden flex items-center justify-center"
                 >
                     <img
-                        src="/assets/project/About_me/Profile_picture.webp"
+                        src="/assets/About_me/Profile_picture.webp"
                         alt="Profile"
                         class="w-full h-full object-cover rounded-full"
                     />
